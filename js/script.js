@@ -64,9 +64,9 @@
         const clickedCard = event.currentTarget;
         if (clickedCard === carteUn) return; // Empêcher le double-clic sur la même carte
 
-        clickedCard.classList.add('flipped'); // CSS qui retourne la carte
+        clickedCard.classList.add('flipped');
 
-        // Conditions qui enregistre le premier clic et attend le seconde clic 
+        // Conditions qui enregistre le premier clic et attend le seconde clic
         if (!carteUn) {
             carteUn = clickedCard;
             return;
@@ -99,4 +99,7 @@
         }, 1000);
     }
 
-   
+    // Fonction qui réinitialise le retournement des cartes
+    function resetBoard() {
+        [carteUn, carteDeux, stopClick] = [null, null, false];
+    }
