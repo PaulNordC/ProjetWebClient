@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <section>
+            <h1>Jeu Memory</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                    <li><a href="profil.html">Profils</a></li>
+                    <li><a href="connection.html">Se connecter</a></li>
+                    <li><a href="jouer.html">Jouer</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section>
+            <fieldset>
+                <legend>Inscrivez-vous</legend>
+                <form action="">
+                    <label for="nom">Nom d'utilisateur</label>
+                    <input type="text" id="nom" name="nom" autofocus required placeholder="3 caractère minimum"
+                        pattern="[A-Za-z]{3,}" title="Entrer votre nom d'utilisateur">
+                    <label for="email">Entrez votre email</label>
+                    <input type="email" name="email" id="email" required placeholder="Votre email"
+                        title="Entrer votre adresse mail">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password" required placeholder="Votre mot de passe"
+                        pattern="(?=.*\d)(?=.*[\W_])[?=.*[a-z]][?=.*[A-Z]].{6,}" title="Entrer votre mot de passe">
+                    <label for="vpassword">Confirmer le mot de passe</label>
+                    <input type="password" name="vpassword" id="vpassword" required
+                        placeholder="COnfirmer votre mot de passe"
+                        pattern="(?=.*\d)(?=.*[\W_])[?=.*[a-z]][?=.*[A-Z]].{6,}" title="Entrer votre mot de passe">
+                    <input type="submit" value="Création du compte">
+                    <input type="reset" value="Annuler">
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+</body>

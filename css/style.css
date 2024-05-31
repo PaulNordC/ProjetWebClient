@@ -1,0 +1,109 @@
+ * {
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ body {
+    background-color: greenyellow;
+    margin: 20px 20%;
+ }
+
+ #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none; /* Enlever les puces de la liste */
+    padding: 0;
+    border-radius: 10px; /* Bordures arrondies */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de profondeur */
+}
+
+#menu a {
+    background-color: #4CAF50; /* Couleur de fond des boutons */
+    border: none;
+    color: white; /* Couleur du texte */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordures arrondies */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+ul {
+    text-align: left; /* Texte aligné à gauche */
+    padding-left: 20px; /* Espacement à gauche pour les puces */
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+ } 
+
+ main section {
+    background-color: aquamarine;
+    border-radius: 10px; /* Bordures arrondies */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de profondeur */
+ }
+
+ form  {
+    display: flex;
+    flex-direction: column;
+ }
+
+form:invalid { border-color: #ccc; box-shadow: none; }
+ 
+
+#imageTable {
+    border-collapse: collapse;
+}
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+.card {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(600px);
+    transition: transform 0.6s;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .front {
+    transform: rotateY(180deg);
+}
+.card.flipped {
+    transform: rotateY(180deg);
+}
