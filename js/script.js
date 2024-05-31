@@ -64,7 +64,7 @@
         const clickedCard = event.currentTarget;
         if (clickedCard === carteUn) return; // Empêcher le double-clic sur la même carte
 
-        clickedCard.classList.add('flipped');
+        clickedCard.classList.add('flipped'); // CSS qui retourne la carte
 
         // Conditions qui enregistre le premier clic et attend le seconde clic
         if (!carteUn) {
